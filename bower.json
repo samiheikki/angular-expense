@@ -1,0 +1,38 @@
+{
+  "name": "angular-expense",
+  "homepage": "https://github.com/samiheikki/angular-expense",
+  "authors": [
+    "Sami Suo-Heikki <samiheikki@vaadin.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.1",
+    "platinum-elements": "PolymerElements/platinum-elements#^1.1.0",
+    "neon-elements": "PolymerElements/neon-elements#^1.0.0",
+    "vaadin-elements": "^0.3.0",
+    "vaadin-combo-box": "1.0.0-alpha6",
+    "vaadin-charts": "^3.0.0-alpha9",
+    "accounting": "~0.3.2",
+    "blueimp-load-image": "~1.14.0",
+    "moment": "~2.10.6",
+    "vaadin-icons": "vaadin/vaadin-icons#~1.0.0-alpha1",
+    "offline": "~0.7.14",
+    "angular": "1.5.0",
+    "angular-touch": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-sanitize": "^1.5.0",
+    "angular-resource": "^1.5.0"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="expenseManagerApp">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Polymer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="suoheikki.com">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="/elements.html">
+</head>
+<body>
+<paper-drawer-panel>
+    <paper-header-panel drawer>
+        <paper-toolbar id="drawerToolbar">
+            <span class="paper-font-title">Menu</span>
+        </paper-toolbar>
+        <paper-menu class="list" attr-for-selected="data-route" selected="0">
+            <a href="#/app/vaadin">
+                <iron-icon icon="home"></iron-icon>
+                <span>Home</span>
+            </a>
+            <a href="#/other">
+                <iron-icon icon="home"></iron-icon>
+                <span>Home</span>
+            </a>
+            <a href="#/app/map">
+                <iron-icon icon="map"></iron-icon>
+                <span>map</span>
+            </a>
+        </paper-menu>
+    </paper-header-panel>
+    <paper-scroll-header-panel main>
+
+        <paper-toolbar>
+
+            <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+            <span class="flex"></span>
+            <div class="flex title">AngularJs Polymer Boost Jump</div>
+
+        </paper-toolbar>
+
+        <div class="content">
+            <div ng-view class="view-frame widget-content" id="ng-main-view">
+                <paper-spinner active style="left:50%; top: 50%;"></paper-spinner>
+            </div>
+        </div>
+
+    </paper-scroll-header-panel>
+
+</paper-drawer-panel>
+</body>
+</html>
