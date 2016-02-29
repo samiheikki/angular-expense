@@ -173,6 +173,7 @@
         _setDataSource: function() {
           var _this = this;
           var grid = this.$.expenses;
+          console.log("set");
           grid.items = function(params, callback) {
             var queryParams = {
               index: params.index,
@@ -197,6 +198,7 @@
         },
 
         update: function() {
+          console.log("update");
           var grid = this.$.expenses;
           if (grid.items) {
             grid.refreshItems();
@@ -215,6 +217,7 @@
         },
 
         _filtersChanged: function() {
+          console.log(this.$.expenses.items);
           if (this.$.expenses.items) {
             var _this = this;
             this.debounce('_filtersChanged', function() {

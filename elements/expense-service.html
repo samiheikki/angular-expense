@@ -1,6 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-localstorage/iron-localstorage.html">
-<link rel="import" href="../scripts/moment-js.html">
+<link rel="import" href="../js/moment-js.html">
 <link rel="import" href="connection-detector.html">
 
 <dom-module id="expense-service">
@@ -56,6 +56,7 @@
             getReceiptURL: _this.getReceiptURL.bind(_this),
             getAllMerchants: _this.getAllMerchants.bind(this)
           };
+          console.log(this.service);
         },
 
         login: function(username, password) {
